@@ -1,0 +1,10 @@
+^C:\USERS\ADMIN\PURPLEMAN\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ADMIN/purpleman -BC:/Users/ADMIN/purpleman/build --check-stamp-file C:/Users/ADMIN/purpleman/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,274 @@
+2026-06-12 17:47:33.316 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:47:33.328 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:47:33.336 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:47:38.347 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:47:38.347 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:47:38.353 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:47:43.365 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:47:43.370 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:47:43.373 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:48:30.404 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:48:30.404 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:48:30.404 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:48:35.422 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:48:35.423 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:48:35.428 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:48:40.438 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:48:40.441 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:48:40.442 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:02.473 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:02.473 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:02.473 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:06.240 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:06.241 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:06.242 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:07.489 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:07.490 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:07.490 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:11.247 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:11.248 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:11.248 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:12.500 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:12.501 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:12.501 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:50:16.256 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:50:16.257 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:50:16.257 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:51:02.531 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:51:02.532 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:51:02.532 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:51:07.538 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:51:07.539 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:51:07.539 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:51:12.557 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:51:12.574 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:51:12.593 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:22.642 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:22.642 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:22.643 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:25.496 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:26.506 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:26.506 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:27.659 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:27.659 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:27.668 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:31.517 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:31.519 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:31.519 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:32.679 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:32.681 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:32.683 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:52:36.531 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:52:36.532 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:52:36.532 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:23.135 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:23.139 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:23.140 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:26.557 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:26.558 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:26.558 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:28.150 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:28.152 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:28.153 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:31.567 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:31.568 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:31.568 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:33.157 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:33.159 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:33.159 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:36.584 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:36.585 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:36.586 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:42.803 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:42.803 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:42.804 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:47.808 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:47.809 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:47.809 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:53:52.819 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:53:52.820 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:53:52.820 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:54:25.637 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:54:25.641 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:54:25.642 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:54:30.656 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:54:30.658 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:54:30.659 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:54:35.668 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:54:35.668 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:54:35.669 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:05.856 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:05.867 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:05.894 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:10.919 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:10.920 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:10.920 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:15.929 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:15.929 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:15.929 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:33.705 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:33.706 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:33.706 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:38.727 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:38.729 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:38.731 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:55:43.744 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:55:43.748 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:55:43.748 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:56:24.947 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:56:24.948 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:56:24.956 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:56:29.960 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:56:29.962 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:56:29.963 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 17:56:34.968 [INFO] TESTING mode: TryTCPConnection skipped
+2026-06-12 17:56:34.971 [INFO] TESTING mode: TryHTTPSConnection skipped
+2026-06-12 17:56:34.971 [INFO] TESTING mode: TryDNSTunneling skipped
+2026-06-12 18:01:17.472 [WARN] NetworkClient failed to send full payload
+2026-06-12 18:01:38.468 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:01:47.496 [WARN] NetworkClient failed to send full payload
+2026-06-12 18:01:59.507 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:10:45.705 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:10:45.711 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:10:50.919 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:10:50.921 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:10:56.046 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:10:56.048 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:06.138 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:11.190 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:16.222 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:26.310 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:31.421 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:36.478 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:47.308 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:11:53.312 [WARN] NetworkClient failed to connect to 0.0.0.0:443
+2026-06-12 18:13:57.899 [WARN] NetworkClient failed to send full payload
+2026-06-12 18:14:19.113 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:14:27.915 [WARN] NetworkClient failed to send full payload
+2026-06-12 18:14:40.151 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:14:57.922 [WARN] NetworkClient failed to send full payload
+2026-06-12 18:15:01.189 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:15:22.231 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-12 18:15:27.926 [WARN] NetworkClient failed to send full payload
+2026-06-13 05:16:39.503 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-13 05:16:48.462 [WARN] NetworkClient failed to send full payload
+2026-06-13 05:17:00.863 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-13 05:17:18.470 [WARN] NetworkClient failed to send full payload
+2026-06-13 05:17:21.898 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-13 05:17:42.938 [WARN] NetworkClient failed to connect to 192.168.1.100:8443
+2026-06-13 05:17:48.474 [WARN] NetworkClient failed to send full payload
+2026-06-13 08:22:26.099 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:22:41.124 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:22:56.149 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:23:11.162 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:23:21.186 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:23:31.219 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:23:41.238 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:23:51.264 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:24:01.306 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:24:16.335 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:24:32.138 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:24:42.174 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:24:52.199 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:25:02.219 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:25:12.249 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:25:22.269 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:25:37.309 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:25:47.333 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:26:02.360 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:26:12.378 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:26:22.404 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:26:37.436 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:26:49.189 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:27:02.461 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:27:17.497 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:27:27.532 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:27:39.244 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:27:52.564 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:28:02.608 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 08:28:14.676 [WARN] NetworkClient failed to connect to 127.0.0.1:8443
+2026-06-13 08:28:21.855 [WARN] NetworkClient failed to connect to 127.0.0.1:8443
+2026-06-13 09:31:10.772 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:31:10.819 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:31:10.829 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:31:20.866 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:31:20.869 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:31:35.889 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:31:35.895 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:31:50.921 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:31:50.922 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:05.937 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:05.939 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:09.858 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:15.967 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:15.969 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:25.986 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:25.996 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:36.027 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:36.029 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:46.067 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:46.068 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:32:56.094 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:32:56.096 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:05.597 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:05.604 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:05.612 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:15.634 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:15.635 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:25.656 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:25.658 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:35.676 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:35.679 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:45.708 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:45.710 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:39:55.733 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:39:55.736 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:05.759 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:40:05.761 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:09.630 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:20.788 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:40:20.789 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:35.954 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:40:35.957 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:45.975 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:40:45.975 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:40:55.997 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:40:55.999 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:00.643 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:06.082 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:41:06.084 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:16.110 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:41:16.111 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:26.136 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:41:26.139 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:36.163 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:41:36.164 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:41:46.189 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:41:46.190 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:01.204 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:01.206 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:06.654 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:11.223 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:11.224 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:26.259 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:26.300 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:36.355 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:36.359 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:46.383 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:46.384 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:42:56.397 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:42:56.399 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:06.667 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:06.673 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:09.669 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:16.711 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:16.714 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:26.755 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:26.757 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:36.788 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:36.789 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:46.814 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:46.815 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:54.731 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}
+2026-06-13 09:43:56.844 [INFO] NetworkClient connected to 127.0.0.1:8443
+2026-06-13 09:43:56.847 [INFO] Sending registration: {"type":"register","id":"DESKTOP-G2UEE3R-1709794859","hostname":"DESKTOP-G2UEE3R","username":"ADMIN","os":"Windows","channels":["tcp","https","usb"],"version":"3.0"}

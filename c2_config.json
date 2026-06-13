@@ -1,0 +1,7 @@
+{
+  "bind_address": "0.0.0.0",
+  "port": 8443,
+  "https": true,
+  "fronting": "",
+  "usb_auto": true
+}

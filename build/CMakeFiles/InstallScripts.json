@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/ADMIN/purpleman/build/cmake_install.cmake",
+		"C:/Users/ADMIN/purpleman/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,11 @@
+C:/Users/ADMIN/purpleman/build/CMakeFiles/purpleman_core.dir
+C:/Users/ADMIN/purpleman/build/CMakeFiles/c2_controller.dir
+C:/Users/ADMIN/purpleman/build/CMakeFiles/pown.dir
+C:/Users/ADMIN/purpleman/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/ADMIN/purpleman/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ADMIN/purpleman/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ADMIN/purpleman/build/tests/CMakeFiles/unit_managers.dir
+C:/Users/ADMIN/purpleman/build/tests/CMakeFiles/unit_cli.dir
+C:/Users/ADMIN/purpleman/build/tests/CMakeFiles/unit_utils.dir
+C:/Users/ADMIN/purpleman/build/tests/CMakeFiles/unit_config.dir
+C:/Users/ADMIN/purpleman/build/tests/CMakeFiles/RUN_TESTS.dir

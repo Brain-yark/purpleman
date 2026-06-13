@@ -1,0 +1,10 @@
+^C:\USERS\ADMIN\PURPLEMAN\BUILD\CMAKEFILES\B3B005FA0216685A653F26BB0731A3AE\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ADMIN/purpleman -BC:/Users/ADMIN/purpleman/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ADMIN/purpleman/build/PurpleMan.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
