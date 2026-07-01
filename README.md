@@ -167,6 +167,28 @@ Virtual Machines:
 # VirtualBox Example:
 VBoxManage natnetwork add --netname PurpleMan-Lab --network "10.0.0.0/24" --enable
 
+## Remote access with ngrok
+
+To expose the controller to another network, enable ngrok in the config file and provide your auth token.
+
+Example configuration:
+
+```json
+{
+  "bind_address": "0.0.0.0",
+  "port": 8443,
+  "https": true,
+  "ngrok": true,
+  "ngrok_auth_token": "YOUR_NGROK_AUTH_TOKEN",
+  "ngrok_region": "us",
+  "ngrok_binary": "ngrok"
+}
+```
+
+Then start the controller normally. On startup it will attempt to launch an ngrok TCP tunnel for the configured port. You will see the public forwarding address in the ngrok console output.
+
+If ngrok is not installed or not on PATH, set `ngrok_binary` to the full path to the executable.
+
 # Create VMs
 # VM1: Controller (10.0.0.10)
 # VM2: Target (10.0.0.20)

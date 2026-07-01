@@ -3,7 +3,9 @@
 
 ConfigManager::ConfigManager()
     : bindAddress("0.0.0.0"), bindPort(443), httpsEnabled(true),
-      usbAutoDetect(true), useDomainFronting(false), frontingDomain() {
+      usbAutoDetect(true), useDomainFronting(false), frontingDomain(),
+      enableNgrok(false), ngrokAuthToken(), ngrokRegion("us"),
+      ngrokBinaryPath("ngrok") {
 }
 
 bool ConfigManager::SetConfigKey(const std::string& key, const std::string& value) {
@@ -14,6 +16,22 @@ bool ConfigManager::SetConfigKey(const std::string& key, const std::string& valu
     if (key == "fronting") {
         frontingDomain = value;
         useDomainFronting = true;
+        return true;
+    }
+    if (key == "ngrok") {
+        enableNgrok = (value == "1" || value == "true" || value == "yes");
+        return true;
+    }
+    if (key == "ngrok_auth_token") {
+        ngrokAuthToken = value;
+        return true;
+    }
+    if (key == "ngrok_region") {
+        ngrokRegion = value;
+        return true;
+    }
+    if (key == "ngrok_binary") {
+        ngrokBinaryPath = value;
         return true;
     }
     if (key == "bind_address") {
@@ -49,8 +67,15 @@ bool ConfigManager::Load(const std::string& path) {
         frontingDomain = value;
         useDomainFronting = true;
     }
+    value = utils::ExtractJSONValue(contents, "ngrok_auth_token");
+    if (!value.empty()) ngrokAuthToken = value;
+    value = utils::ExtractJSONValue(contents, "ngrok_region");
+    if (!value.empty()) ngrokRegion = value;
+    value = utils::ExtractJSONValue(contents, "ngrok_binary");
+    if (!value.empty()) ngrokBinaryPath = value;
     httpsEnabled = utils::ParseJSONBool(contents, "https", httpsEnabled);
     usbAutoDetect = utils::ParseJSONBool(contents, "usb_auto", usbAutoDetect);
+    enableNgrok = utils::ParseJSONBool(contents, "ngrok", enableNgrok);
     bindPort = static_cast<uint16_t>(utils::ParseJSONInt(contents, "port", bindPort));
     return true;
 }
@@ -62,7 +87,11 @@ std::string ConfigManager::ToJSON() const {
     json += "  \"port\": " + std::to_string(bindPort) + ",\n";
     json += "  \"https\": " + std::string(httpsEnabled ? "true" : "false") + ",\n";
     json += "  \"fronting\": \"" + frontingDomain + "\",\n";
-    json += "  \"usb_auto\": " + std::string(usbAutoDetect ? "true" : "false") + "\n";
+    json += "  \"usb_auto\": " + std::string(usbAutoDetect ? "true" : "false") + ",\n";
+    json += "  \"ngrok\": " + std::string(enableNgrok ? "true" : "false") + ",\n";
+    json += "  \"ngrok_auth_token\": \"" + ngrokAuthToken + "\",\n";
+    json += "  \"ngrok_region\": \"" + ngrokRegion + "\",\n";
+    json += "  \"ngrok_binary\": \"" + ngrokBinaryPath + "\"\n";
     json += "}\n";
     return json;
 }

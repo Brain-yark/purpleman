@@ -3,5 +3,9 @@
   "port": 8443,
   "https": true,
   "fronting": "",
-  "usb_auto": true
+  "usb_auto": true,
+  "ngrok": false,
+  "ngrok_auth_token": "",
+  "ngrok_region": "us",
+  "ngrok_binary": "ngrok"
 }

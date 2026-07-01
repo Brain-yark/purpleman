@@ -18,6 +18,8 @@ public:
         std::function<void(const std::string&, const std::string&)> setConfig;
         std::function<void()> saveConfig;
         std::function<void(const std::string&, const std::string&, const std::string&)> executeCommand;
+        std::function<void(const std::string&, const std::string&, const std::string&)> uploadFile;
+        std::function<void(const std::string&, const std::string&, const std::string&)> downloadFile;
         std::function<void()> shutdown;
     };
 

@@ -8,7 +8,6 @@ enum class Level {
     Debug,
     Info,
     Warning,
-    Warn,
     Error
 };
 

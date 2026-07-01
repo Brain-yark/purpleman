@@ -12,7 +12,6 @@ public:
     bool ConnectTCP(const std::string& server, uint16_t port, uint32_t timeoutMs);
     bool Send(const std::string& data);
     int Receive(char* buffer, int bufferSize);
-    int Receive(char* buffer, int bufferSize, int timeoutMs);  // ← ADD THIS
     void Close();
 
     SOCKET Socket() const;

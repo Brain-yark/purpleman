@@ -18,6 +18,10 @@ int main() {
     config.usbAutoDetect = false;
     config.useDomainFronting = true;
     config.frontingDomain = "front.example.com";
+    config.enableNgrok = true;
+    config.ngrokAuthToken = "token123";
+    config.ngrokRegion = "us";
+    config.ngrokBinaryPath = "C:/Tools/ngrok.exe";
 
     Assert(config.Save("config_test.json"), "ConfigManager should save file");
 
@@ -29,11 +33,19 @@ int main() {
     Assert(loaded.usbAutoDetect == false, "Loaded usb_auto setting should match");
     Assert(loaded.frontingDomain == "front.example.com", "Loaded fronting domain should match");
     Assert(loaded.useDomainFronting == true, "Loaded domain fronting flag should match");
+    Assert(loaded.enableNgrok == true, "Loaded ngrok toggle should match");
+    Assert(loaded.ngrokAuthToken == "token123", "Loaded ngrok token should match");
+    Assert(loaded.ngrokRegion == "us", "Loaded ngrok region should match");
+    Assert(loaded.ngrokBinaryPath == "C:/Tools/ngrok.exe", "Loaded ngrok binary path should match");
 
     Assert(config.SetConfigKey("port", "443"), "ConfigManager should accept port key");
     Assert(config.bindPort == 443, "ConfigManager should update port");
     Assert(config.SetConfigKey("usb_auto", "true"), "ConfigManager should accept usb_auto key");
     Assert(config.usbAutoDetect == true, "ConfigManager should update usb_auto flag");
+    Assert(config.SetConfigKey("ngrok", "true"), "ConfigManager should accept ngrok key");
+    Assert(config.enableNgrok == true, "ConfigManager should enable ngrok");
+    Assert(config.SetConfigKey("ngrok_region", "eu"), "ConfigManager should accept ngrok_region key");
+    Assert(config.ngrokRegion == "eu", "ConfigManager should update ngrok region");
     Assert(config.SetConfigKey("bind_address", "0.0.0.0"), "ConfigManager should accept bind_address key");
 
     std::cout << "All config tests passed." << std::endl;

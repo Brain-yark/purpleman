@@ -23,6 +23,10 @@ int main() {
     std::string decrypted = utils::XOREncrypt(encrypted, key);
     Assert(decrypted == plain, "XOREncrypt should round-trip correctly");
 
+    std::string encoded = utils::Base64Encode("hello");
+    std::string decoded = utils::Base64Decode(encoded);
+    Assert(decoded == "hello", "Base64Encode/Base64Decode should round-trip text");
+
     std::string testFile = "utils_test_output.txt";
     Assert(utils::WriteTextFile(testFile, "hello world"), "WriteTextFile should succeed");
 

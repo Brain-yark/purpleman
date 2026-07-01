@@ -62,35 +62,6 @@ int NetworkClient::Receive(char* buffer, int bufferSize) {
     return recv(socket_, buffer, bufferSize, 0);
 }
 
-// ADD THIS NEW METHOD:
-int NetworkClient::Receive(char* buffer, int bufferSize, int timeoutMs) {
-    if (socket_ == INVALID_SOCKET) return -2;
-    
-    // Wait for data with timeout using select()
-    fd_set readSet;
-    FD_ZERO(&readSet);
-    FD_SET(socket_, &readSet);
-    
-    timeval timeout;
-    timeout.tv_sec = timeoutMs / 1000;
-    timeout.tv_usec = (timeoutMs % 1000) * 1000;
-    
-    int selectResult = select(0, &readSet, NULL, NULL, &timeout);
-    
-    if (selectResult > 0) {
-        // Data available, receive it
-        return recv(socket_, buffer, bufferSize, 0);
-    }
-    else if (selectResult == 0) {
-        // Timeout - no data available
-        return -1;
-    }
-    else {
-        // Error
-        return -2;
-    }
-}
-
 void NetworkClient::Close() {
     if (socket_ != INVALID_SOCKET) {
         closesocket(socket_);
